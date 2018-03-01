@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <style>
+        .content {
+            min-height:60px;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+        }
+        .quanbox{
+            -webkit-box-flex: 1;
+            margin: 10px;
+            height: 50px;
+        }
+        .quan{
+            background-color: #0c60ee;
+            width: 50px;
+            height:50px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="doc">
+
+    <div class="content">
+        <div class="quanbox">
+            <div class="quan"></div>
+        </div>
+        <div class="quanbox">
+            <div class="quan"></div>
+        </div>
+        <div class="quanbox">
+            <div class="quan"></div>
+        </div>
+        <div class="quanbox">
+            <div class="quan"></div>
+        </div>
+        <div class="quanbox">
+            <div class="quan"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
