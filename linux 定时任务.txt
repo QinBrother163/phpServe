@@ -1,0 +1,19 @@
+1、   service crond stop     停止
+
+2、   crontab -l              列出该用户的计时器设置
+
+3、   crontab -e              编辑该用户的计时器设置     按 i  进入编辑状态   ：wq  退出并保存
+
+4、   crontab -r              删除该用户的计时器设置
+
+5、   service crond start    启动
+
+6、   service crond restart  重启服务
+
+7、   * */1 * * * php /toodo/crontab/test.php     每小时执行
+
+
+
+---------------------------------------------- laravel
+php artisan queue:listen     启动队列侦听器
+  

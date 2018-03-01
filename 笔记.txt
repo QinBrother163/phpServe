@@ -1,0 +1,286 @@
+外套 wrap ------------------用于最外层
+头部 header ----------------用于头部
+主要内容 main ------------用于主体内容（中部）
+左侧 main_left -------------左侧布局
+右侧 main_right -----------右侧布局
+导航条 nav -----------------网页菜单导航条
+内容 content ---------------用于网页中部主体
+底部 footer -----------------用于底部
+
+
+chown -R apache:apache ToodoLT
+
+
+Linux CentOS6.laravel 172   php5.6.30
+
+
+<script type="text/javascript">
+function keydown(e) 
+{
+	var currKey=0,e=e||event; 
+	currKey=e.keyCode||e.which||e.charCode;//支持IE、FF 
+	if (currKey == 13) 
+	{
+		document.getElementByIdx_x("btn_selector").click(); 
+	}
+	
+	alert("我保证，你现在用的是演示一"+currKey);
+} 
+
+document.onkeydown = keydown; //onkeydown事件调用方式 
+
+</script>
+
+
+$aaa = "CREATE TRIGGER t_afterinsert_on_tab1
+AFTER UPDATE ON tdo_order_datas_logs
+FOR EACH ROW
+BEGIN
+UPDATE tdo_order_datas_logs_2017 set tdo_order_datas_logs_2017.payAmount = new.payAmount where tdo_order_datas_logs_2017.tradeNo = new.tradeNo;
+END;";
+//---------------  mysql 监听器
+
+
+
+
+ function reurl() {
+
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+
+        var Request = undefined;
+        Request = GetRequest();
+        var refresh = Request["refresh"];
+
+
+
+        var url = location.href;
+
+        if (refresh != 1) { //如果refresh的值不等于1表示没有刷新
+
+            url += "&refresh=1"; //把变量 url 的值加入 ?1
+
+            self.location.replace(url); //刷新页面
+        }
+    }
+    setTimeout(reurl,3000)
+
+
+
+
+
+
+    var GetJson;
+    GetJson = function (url,data) {
+        var req;
+        req = new XMLHttpRequest;
+        req.open("GET",url, true);
+        req.onreadystatechange = function () {
+            var obj;
+            if(req.readyState === 4){
+                obj = eval('[' + req.responseText + ']');
+                data(obj[0]);
+            }
+        };
+        req.send(null)
+    };
+
+
+    GetJson("txt.json",function (list) {
+    })
+
+
+
+
+
+
+//-------------
+
+
+<object class="obj" id="player" height="64" width="260" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">
+    <param NAME="AutoStart" VALUE="1">
+    <!--是否自动播放-->
+    <param NAME="Balance" VALUE="0">
+    <!--调整左右声道平衡,同上面旧播放器代码-->
+    <param name="enabled" value="-1">
+    <!--播放器是否可人为控制-->
+    <param NAME="EnableContextMenu" VALUE="-1">
+    <!--是否启用上下文菜单-->
+    <param NAME="url" value="img/bgVideo.swf">
+    <!--播放的文件地址-->
+    <param NAME="PlayCount" VALUE="1">
+    <!--播放次数控制,为整数-->
+    <param name="rate" value="1">
+    <!--播放速率控制,1为正常,允许小数,1.0-2.0-->
+    <param name="currentPosition" value="0">
+    <!--控件设置:当前位置-->
+    <param name="currentMarker" value="0">
+    <!--控件设置:当前标记-->
+    <param name="defaultFrame" value="">
+    <!--显示默认框架-->
+    <param name="invokeURLs" value="0">
+    <!--脚本命令设置:是否调用URL-->
+    <param name="baseURL" value="">
+    <!--脚本命令设置:被调用的URL-->
+    <param name="stretchToFit" value="1">
+    <!--是否按比例伸展-->
+    <param name="volume" value="50">
+    <!--默认声音大小0%-100%,50则为50%-->
+    <param name="mute" value="0">
+    <!--是否静音-->
+    <param name="uiMode" value="None">
+    <!--播放器显示模式:Full显示全部;mini最简化;None不显示播放控制,只显示视频窗口;invisible全部不显示-->
+    <param name="windowlessVideo" value="0">
+    <!--如果是0能允许全屏,否则只能在窗口中查看-->
+    <param name="fullScreen" value="1">
+    <!--开始播放是否自动全屏-->
+    <param name="enableErrorDialogs" value="-1">
+    <!--是否启用错误提示报告-->
+    <param name="SAMIStyle" value>
+    <!--SAMI样式-->
+    <param name="SAMILang" value>
+    <!--SAMI语言-->
+    <param name="SAMIFilename" value>
+    <!--字幕ID-->
+</object>
+
+//-------------
+
+window.console && window.console.log && (console.log("一张网页，要经历怎样的过程，才能抵达用户面前？\n一位新人，要经历怎样的成长，才能站在技术之巅？\n探寻这里的秘密；\n体验这里的挑战；\n成为这里的主人；\n加入百度，加入网页搜索，你，可以影响世界。\n"), console.log("请将简历发送至 %c ps_recruiter@baidu.com（ 邮件标题请以“姓名-应聘XX职位-来自console”命名）", "color:red"), console.log("职位介绍：http://dwz.cn/hr2013"))
+
+//----------
+
+
+
+
+//----
+
+
+安装 VSCode 提示安装程序清单签名验证失败：--》》  开始-运行-gpedit.msc-计算机配置-Windows 设置-安全设置-本地策略-安全选项-系统机密：将FIPS兼容算法用于加密、哈希和签名-设置禁用-退出安装程序，重新安装一次。
+
+//---
+*{outline:0;}
+
+UL： 无序列表
+
+OL： 有序列表
+
+浮动：
+float： left（左）
+float： right（右）
+
+UL
+list-style:onne 清除圆点
+
+
+hover  伪类：。
+
+JavaScript:
+
+ 定义类型 class：
+javaScript 中定义类型的约定,定义一个函数就是一个类型，函数名词的一地个字母大写
+一个对象的出生，应该由构造函数来构造，javaScript中使用new关键字调用函数的行为就为构造函数
+JavaScript中先了解两个属性，该属性由object对象提供
+
+constructor
+this 关键字：代表着对象自引用
+prototype 共享原型
+proto 关键字                
+定义：
+
+
+
+
+页面制作流程：
+
+http://wenku.baidu.com/view/1e0a439f0912a2161579290a.html
+
+
+
+2016-08-23
+【捕获】
+1、text ：获取纯文本信息
+2、html：获取纯文本的情况下还能获取代码
+3、val: 获取input的信息  concole.log（￥（“#txt”）.val（））
+4、attr：获取对象的属性
+【设置】
+1、
+【回调】
+ownP 自己的内容
+oid  
+---------------------------------------
+append（）被选中元素后插入内容  after（）选中之前插入内容
+prepend（）被选中元素后插入内容  before（）选中之前插入内容
+
+【移除】
+1、remove（）移除元素
+2、empty（）清空元素
+
+2016-08-25
+
+元素的遍历过滤
+向下
+1、children（）只能找到直接的子元素。
+2、find（带参数）找到所有任意指定的子元素
+向上
+1、parent（）直接父元素
+2、parents（）直接所有的父元素
+3、parentsUntil（带参数）
+
+过滤
+eq（下标值）
+同级遍历
+1、siblings（）同级的所有元素改变
+2、next（）找到当前元素下一个的同级
+3、nextAll（）找到元素下面所有的同级
+4、nextUntil（）找到当前元素下面指定的同级元素之间的所有元素
+5、previous（）找到当前元素的上一级的元素
+6、prevAll（）找到当前元素上面所有的同级元素
+7、preveUntil（）找到元素上面指定的同级之间的所有元素
+
+
+
+分钟倒计时：
+<div id="show"></div>
+<script type="text/javascript">
+    var timeLeft=180*1000;//这里设定的时间是7秒
+    function countTime(){
+        var startMinutes=parseInt(timeLeft/(70*1000),10);
+        var startSec=parseInt((timeLeft-startMinutes*60*1000)/1000);
+        document.getElementById('show').innerHTML = startMinutes+":"+startSec+":" + "00";
+        timeLeft=timeLeft-1000;
+        setTimeout('countTime()',1000);
+    }
+    countTime();
+</script>
+
+
+A页面 ：
+recordCookie:function () {
+        var songNameLabels = document.getElementsByTagName("a");
+        for (var i = 0; i < songNameLabels.length; i++) {
+            document.cookie = 'songName='+songNameLabels[this.optNodeIndex].innerHTML;
+        }
+    },
+B页面 ：
+var getCookie = function (cookieName) {
+            var arrCookie = document.cookie.split("; ");
+            for (var i = 0; i < arrCookie.length; i++) {
+                var arr = arrCookie[i].split("=");
+                if (cookieName == arr[0]) {
+                    return arr[1];
+                }
+            }
+            return "";
+        };
+        alert(getCookie('songName'))
