@@ -1,0 +1,23 @@
+0、 web 是补充数据php文件。运行示例（cmd 进入php文件所在位置）： E:\php\www\web>php aaa.php "start=2017-11-11 23:01:25&stop=2017-11-20 23:01:23"
+
+1、 解压后文件放置位置注意：把  web 放置 D盘 根目录。如有变更，请修改 php 文件 变量   $txtFileName  的内容；
+
+3、 consumelog_gd.php   文件是补充数据库 gztj_db_gdgd  172.16.147.103
+
+4、 order.php   文件是补充数据库 order_list_1_91 172.16.147.103
+
+5、 fsdp_activity_91.php   文件是补充数据库 fsdp_activity_91 172.16.147.104
+
+6、 fsdp_mgpayrecord_91.php   文件是补充数据库 fsdp_mgpayrecord_91 172.16.147.104
+
+
+
+
+
+
+
+
+
+0、 www 是定时运行导出数据的php文件。
+
+1、解压后文件放置位置注意：把  www 放置 D盘 根目录。如有变更，请修改 php 文件 变量   $txtFileName  的内容；
