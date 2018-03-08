@@ -1,0 +1,53 @@
+运行条件一：修改linux 网卡配置，广东广电网络，需要连接外网
+
+
+1、把 ToodoBackup 项目放入 linux虚拟机内。位置：/toodo/work.release
+
+2、给 ToodoBackup apache权限。命令：chown -R apache:apache ToodoBackup
+
+3、切换 apache用户。命令：su apache
+
+4、添加定时任务 crontab。命令：
+				一：crontab -e
+
+				二：按 i
+
+				三：复制 * * * * * php /toodo/work.release/ToodoBackup/artisan schedule:run >> /dev/null 2>&1
+
+				四：按 Esc
+
+				五：按 " : wq  "
+
+5、切换 root用户。命令：su root
+
+6、重启 crontab任务。命令 service crond restart
+
+7、添加后台服务。命令：
+			一：vi /etc/supervisord.conf
+
+			二：按 i
+
+			三：复制 
+
+[program:tdsrvfrs-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /toodo/work.release/ToodoBackup/artisan queue:work --sleep=3 --tries=3
+autostart=true
+autorestart=true
+user=apache
+numprocs=8
+redirect_stderr=true
+stdout_logfile=/toodo/work.release/ToodoBackup/storage/logs/worker.log
+	
+			四：按 Esc
+			五：按 " : wq  "
+
+8、重启后台任务。命令：
+			一：supervisorctl reload
+
+			二：supervisorctl start tdsrvfrs-worker
+
+			三：supervisorctl -c /etc/supervisord.conf
+
+
+
